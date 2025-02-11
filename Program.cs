@@ -1,44 +1,103 @@
 ﻿// See https://aka.ms/new-console-template for more information
-
 using System.Security.Cryptography.X509Certificates;
-
-public static class Program
+namespace CharpDops
 {
-    public static void Main(string[] args)
+    public static class Program
     {
-        // Console.WriteLine("Введите первое");
-        // int userInput = int.Parse(Console.ReadLine() ?? string.Empty);
-        // Console.WriteLine("Введите второе");
-        // int userInput2 = int.Parse(Console.ReadLine() ?? string.Empty);
-        // Модификатор_доступа тип_возвращаемого_значения имя_функции(Входные_данные_для_функции){}
-        //int result = Sum(userInput, userInput2);
-        Sum(7,20).Output();
-        Sum(5.10,5.25).Output();
-        "Тестим вывод со стринга".Output();
-        // Output(result);
-    }
+        public static void Main(string[] args)
+        {
+            #region Hello GAYS
+            // Console.WriteLine("Введите первое");
+            // int userInput = int.Parse(Console.ReadLine() ?? string.Empty);
+            // Console.WriteLine("Введите второе");
+            // int userInput2 = int.Parse(Console.ReadLine() ?? string.Empty);
+            // Модификатор_доступа тип_возвращаемого_значения имя_функции(Входные_данные_для_функции){}
+            //int result = Sum(userInput, userInput2);
+            // Output(result);
+            //ArifmeticOperation operation = new(5,2,3,true);
+            //Console.WriteLine(gg);
+            //ConsoleOutput output = new ConsoleOutput();
+            //int gg = operation.Sum(1, 2);
+            //output.Output(gg);
+            #endregion
+            Console.WriteLine("Введите первое");
+            int userInput = int.Parse(Console.ReadLine() ?? string.Empty);
+            Console.WriteLine("Введите второе");
+            int userInput2 = int.Parse(Console.ReadLine() ?? string.Empty);
 
-    private static int Sum(int a, int b)
-    {
-        return a + b;
-    }
-    
-    private static double Sum(double a, double b)
-    {
-        return a + b;
-    }
-    private static void Output(this int answer)
-    {
-        Console.WriteLine($"Сложение двух чисел = {answer}");
-    }
+            ConsoleOutput output = new ConsoleOutput(userInput, userInput2);
+            output.WriteAll();
 
-    private static void Output(this double answer)
-    {
-        Console.WriteLine($"Сложение двух дробных чисел = {answer}");
-    }
+            
+        }
+        #region GG
+        //class ArifmeticOperation
+        //{
+        //    private int _a;
+        //    private int A;
+        //    private int B;
+        //    //public int A { 
+        //    //    get { 
+        //    //        return A; 
+        //    //    } 
+        //    //    set 
+        //    //    {
+        //    //        if (value == 5)
+        //    //        {
+        //    //            Console.WriteLine("Еблан?");
+        //    //        }
+        //    //        else 
+        //    //        {
+        //    //            A = value;
+        //    //        }
+        //    //    } 
+        //    //}
 
-    private static void Output(this string answer)
-    {
-        Console.WriteLine($"Вы написали что-то = {answer}");
+        //    public ArifmeticOperation(int a, int b, double c, bool isEqual)
+        //    {
+        //        A = a;
+        //        B = b;
+        //    }
+
+        //    public override string ToString()
+        //    {
+        //        return $"Сложение a + b = {A + B}";
+        //    }
+        //    public int Sum(int a, int b)
+        //    {
+        //        return a + b;
+        //    }
+
+        //    public int getA()
+        //    {
+        //        return A;
+        //    }
+        //    public void setA(int a)
+        //    {
+        //        A = a;
+        //    }
+        //    public double Sum(double a, double b)
+        //    {
+        //        return a + b;
+        //    }
+        //}
+        //class ConsoleOutput
+        //{
+        //    public void Output(int answer)
+        //    {
+        //        Console.WriteLine($"Сложение двух чисел = {answer}");
+        //    }
+
+        //    //public void Output(double answer)
+        //    //{
+        //    //    Console.WriteLine($"Сложение двух дробных чисел = {answer}");
+        //    //}
+
+        //    //public void Output(string answer)
+        //    //{
+        //    //    Console.WriteLine($"Вы написали что-то = {answer}");
+        //    //}
+        //}
+        #endregion
     }
 }
